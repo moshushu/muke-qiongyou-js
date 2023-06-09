@@ -1,0 +1,18 @@
+/* 返回顶部按钮的样式 */
+.backtop {
+  /* 根据窗口定位 */
+  /* 固定定位，脱离文档流 */
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+
+  background: #ccc;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  border-radius: 40%;
+  color: black;
+}

@@ -1,0 +1,195 @@
+.hotel-free {
+  background: #FFFFFF;
+  height: 698px;
+  padding-top: 40px;
+}
+
+/* 现将整个右浮动，再在里面浮动li */
+.hotel-free .center-wrap .second-title nav {
+  float: right;
+  width: 465px;
+  margin-top: 12px;
+}
+.hotel-free .center-wrap .second-title nav li {
+  float: left;
+  margin-right: 14px;
+  font-size: 14px;
+}
+.hotel-free .center-wrap .second-title nav li:first-child{
+  margin-right: 16px;
+}
+.hotel-free .center-wrap .second-title nav li:last-child{
+  margin-right: 0;
+}
+.hotel-free .center-wrap .second-title nav li a{
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* 给导航添加点击后的样式 */
+.hotel-free .center-wrap .second-title .mark {
+  border-bottom: 4px solid #20BD9A;
+  /* 让样式下移一点 */
+  padding-bottom: 2px;
+}
+/* 同时改变a标签的样式 */
+.hotel-free .center-wrap .second-title .mark a{
+  color: #20BD9A;
+}
+
+/* 内容 */
+.hotel-free .center-wrap >ul >li {
+  float: left;
+}
+
+/* 该样式与其他样式不同，单独写 */
+.hotel-free .center-wrap ul li.big-grid {
+  width: 560px;
+  height: 270px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.hotel-free .center-wrap ul li.big-grid .info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  width: 560px;
+  height: 104px;
+  padding: 30px 26px;
+  box-sizing: border-box;
+  line-height: 26px;
+  /* 这个会将字体的透明度也修改了，我们只是需要背景的透明度 */
+  /* background:  #1C1F21;
+  opacity: 0.55; */
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* 为统一的样式，2～7，一共五个 */
+.hotel-free .center-wrap ul li.pro-grid{
+  width: 264px;
+  height: 270px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+/* 第三个不需要外边距 */
+.hotel-free .center-wrap ul li:nth-child(3){
+  margin-right: 0;
+}
+/* 调整2～7图片部分 */
+.hotel-free .center-wrap ul li.pro-grid .picbox{
+  height: 184px;
+}
+
+/* 调整2~7文字部分 */
+.hotel-free .center-wrap ul li.pro-grid .wordbox{
+  font-size: 14px;
+  color: #1C1F21;
+  line-height: 22px;
+  padding: 21px 14px;
+}
+
+/* tag的通用样式 */
+.hotel-free .center-wrap ul li .tag {
+  width: 74px;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.60);
+  z-index: 9999;
+}
+/* 首个的tag独有样式 */
+.hotel-free .center-wrap ul li.big-grid .tag {
+  position: absolute;
+  left: 0;
+  top: 126px;
+  color: white;
+}
+
+.hotel-free .center-wrap ul li.pro-grid .picbox {
+  position: relative;
+}
+/* 其余五个的统一样式，tag */
+.hotel-free .center-wrap ul li.pro-grid .picbox .tag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+}
+
+/* 查看更多 */
+.hotel-free .center-wrap ul li.more-grid{
+  width: 264px;
+  height: 270px;
+  margin-bottom: 32px;
+  /* 渐变色 */
+  background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
+  position: relative;
+}
+/* 将a标签撑开，同时转成block */
+.hotel-free .center-wrap ul li.more-grid a{
+  display: block;
+  height: 270px;
+  padding-top: 46px;
+  box-sizing: border-box;
+  color: white;
+}
+/* p标签样式 */
+.hotel-free .center-wrap ul .more-grid p {
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 查看更多的图标 */
+.hotel-free .center-wrap ul li.more-grid .iconfont {
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  font-size: 48px;
+  list-style: 48px;
+  width: 48px;
+  height: 48px;
+  top: 118px;
+}
+/* 鼠标触碰more-grid盒子之后，查看更多的图标进行蹦跳动画 */
+.hotel-free .center-wrap ul li.more-grid:hover .iconfont {
+  animation: ud .4s ease 0s infinite alternate;
+}
+@keyframes ud{
+  from {
+      transform: translateY(-10px);
+  }
+  to {
+      transform: translateY(10px);
+  }
+}
+
+/* ul中的内容 */
+.hotel-free .center-wrap ul li.more-grid ul {
+  margin-top: 112px;
+  padding-left: 40px;
+}
+.hotel-free .center-wrap ul li.more-grid ul li {
+  float: left;
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+  /* 用边框来画分割竖线 */
+  border-right: 1px solid white;
+  padding: 0 9px;
+}
+.hotel-free .center-wrap ul li.more-grid ul li:last-child {
+  border-right: none;
+}
+
+/* 给当前下面的所有li添加阴影效果 */
+.hotel-free .center-wrap>ul>li{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+}
+.hotel-free .center-wrap>ul>li:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+}

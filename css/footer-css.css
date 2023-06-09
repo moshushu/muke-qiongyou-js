@@ -1,0 +1,124 @@
+/* 页脚样式 */
+
+/* info1 */
+.footer-info .info1 {
+  background-color: #F7F7F7;
+  height: 184px;
+  padding-top: 36px;
+}
+.footer-info .info1 ul >li {
+  float: left;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 0 26px;
+  border-right: 2px solid  #1C1F21;
+}
+.footer-info .info1 ul >li a {
+  color: #1C1F21;
+}
+.footer-info .info1 ul >li:first-child{
+  padding-left: 0;
+}
+.footer-info .info1 ul >li:last-child{
+  padding-right: 0;
+  border-right: none;
+}
+/* 说明服务 */
+.footer-info .info1 .rubric-box {
+  padding-top: 40px;
+}
+.footer-info .info1 .rubric-box dl {
+  float: left;
+  width: 289px;
+  margin-right: 30px;
+  /* 放置精灵图 */
+  padding-left: 75px;
+  position: relative;
+}
+.footer-info .info1 .rubric-box dl:last-child {
+  margin-right: 0;
+}
+
+.footer-info .info1 .rubric-box dl dt {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-info .info1 .rubric-box dl dd {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* 在dl前插入精灵图,精灵图使用绝对定位 */
+.footer-info .info1 .rubric-box dl::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* 各个精灵图的位置 */
+.footer-info .info1 dl.txfw::before {
+  background-position: -150px -178px;
+}
+.footer-info .info1 dl.ccsx::before {
+  background-position: -150px -104px;
+}
+.footer-info .info1 dl.axph::before {
+  background-position: -150px -31px;
+}
+
+/* info2 */
+.footer-info .info2 {
+  background-color: #1C1F21;
+  height: 177px;
+  padding-top: 48px;
+  color: #FFFFFF;
+}
+.footer-info .info2 .footer-title h2 {
+  float: left;
+  width: 230px;
+  font-size: 46px;
+  margin-right: 21px;
+}
+.footer-info .info2 .footer-title p {
+  float: left;
+  width: 532px;
+  font-size: 14px;
+  position: relative;
+  top: 12px;
+}
+
+.footer-info .info2 ul {
+  margin-top: 31px;
+}
+.footer-info .info2 ul li {
+  float: left;
+  padding: 0 13px;
+  border-right: 1px solid white;
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+}
+.footer-info .info2 ul li:last-child {
+  border-right: none;
+}
+.footer-info .info2 ul li:first-child {
+  padding-left: 0;
+}
+.footer-info .info2 ul li a {
+  color: white;
+}
+
+.footer-info .info2 .copyrights {
+  margin-top: 20px;
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+}
+.footer-info .info2 .copyrights a {
+  color: white;
+}

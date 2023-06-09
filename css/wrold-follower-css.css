@@ -1,0 +1,230 @@
+/* 最世界和跟团的通用样式 */
+
+.world-follower {
+  height: 698px;
+  padding-top: 40px;
+}
+
+/* 右边导航栏 */
+/* 先将整个ul右浮动，再将li左浮动 */
+/* 如果直接对li左浮动，回导致后面的li跑到前面来 */
+.world-follower .second-title ul {
+  float: right;
+  margin-top: 12px;
+}
+.world-follower .second-title ul li{
+  float: left;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 16px;
+}
+.world-follower .second-title ul li:last-child{
+  margin-right: 0;
+}
+.world-follower .second-title ul li a {
+  color: rgba(0, 0, 0, 0.85);
+}
+.world-follower .second-title ul li.mark {
+  border-bottom: 4px solid #20BD9A;
+  padding-bottom: 2px;
+}
+.world-follower .second-title ul li.mark a {
+  color: #20BD9A;
+}
+
+/* 内容 */
+.world-follower .bd {
+  height: 573px;
+}
+
+.world-follower .bd>ul>li {
+  float: left;
+  height: 270px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+}
+.world-follower .bd>ul>li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+
+/* 第三个不需要右边距 */
+.world-follower .bd ul li:nth-child(3){
+  margin-right: 0;
+}
+
+/* 大图片 */
+.world-follower .bd ul li.big-grid {
+  position: relative;
+  width: 560px;
+}
+.world-follower .bd ul li.big-grid .picbox {
+  width: 560px;
+  height: 270px;
+}
+
+/* 小图片 */
+.world-follower .bd ul li.pro-grid {
+  width: 264px;
+}
+.world-follower .bd ul li.pro-grid .picbox {
+  width: 264px;
+  height: 184px;
+}
+.world-follower .bd ul li.pro-grid .wordbox {
+  width: 264px;
+  height: 86px;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 20px 14px 0 14px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* 更多内容 */
+.world-follower .bd ul li.more-grid {
+  width: 264px;
+  height: 270px;
+  margin-right: 0;
+  position: relative;
+}
+.world-follower .bd ul li.more-grid a {
+  display: block;
+  padding-top: 46px;
+  box-sizing: border-box;
+  width: 264px;
+  height: 270px;
+  color: #FFFFFF;
+}
+.world-follower .bd ul li.more-grid p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+/* 图标 */
+.world-follower .bd ul li.more-grid .iconfont {
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  top: 120px;
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  line-height: 48px;
+}
+/* 图标跳动 */
+.world-follower .bd ul li.more-grid a:hover .iconfont {
+  animation: ud .4s ease 0s infinite alternate;
+}
+@keyframes ud {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+/*  */
+.world-follower .bd .more-grid ul {
+  margin-top: 115px;
+}
+.world-follower .bd .more-grid ul li {
+  float: left;
+  border-right: 1px solid white;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 9px;
+}
+.world-follower .bd .more-grid ul li:last-child {
+  border-right: none;
+}
+
+/* 大图片的鼠标效果 */
+.world-follower .bd .big-grid .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 560px;
+  height: 270px;
+  background-color: rgba(0,0,0,0.6);
+  /* 总透明度 */
+  opacity: 0;
+    /* 过渡 */
+  transition: opacity .4s ease 0s;
+}
+.world-follower .bd .big-grid:hover .mask{
+  opacity: 1;
+}
+
+/* 圆形图标 */
+.world-follower .bd .big-grid .top-circle {
+  position: absolute;
+  top: -106px;
+  left: 50%;
+  width: 106px;
+  height: 106px;
+  margin-left: -53px;
+  /* 实现圆形效果 */
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  /* 文字垂直居中 */
+  padding-top: 25px;
+  /* 保持盒子不变形 */
+  box-sizing: border-box;
+  /* 实现从上面出现的动态效果 */
+  /* 实际上就是将放置在外面的圆形图标，移动到top=62px的位置 */
+  transition: top .5s ease 0s;
+}
+.world-follower .bd .big-grid:hover .top-circle{
+  top: 62px;
+}
+/* 圆形图标内的文字 */
+.world-follower .bd .big-grid .top-circle p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* 底部文字 */
+.world-follower .bd .big-grid .bottom-word {
+  position: absolute;
+  left: 26px;
+  bottom: -50px;
+  width: 508px;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  transition: bottom .5s ease 0s;
+}
+.world-follower .bd .big-grid:hover .bottom-word {
+  bottom: 40px;
+}
+
+/* 根据不同的类，调整通用类的样式，以满足特殊的样式 */
+/* 最世界·深度旅行 的颜色 */
+.most-world {
+  background-color: #F7F7F7;
+}
+/* 跟团/半自助游 的颜色 */
+.follower {
+  background-color: white;
+}
+
+/* 更多内容的渐变色调整 最世界 */
+.most-world .bd ul li.more-grid {
+  background-image: linear-gradient(180deg, #BD5EE8 0%, #832ABB 98%);
+}
+/* 更多内容的渐变色调整 半自助游 */
+.follower .bd ul li.more-grid {
+  background-image: linear-gradient(180deg, #41D8E9 0%, #3685EA 98%);
+}
+
+/* 更多内容中的下方ul中样式调整  最世界 */
+.most-world .bd ul li.more-grid ul{
+  margin-left: 38px;
+}
+/* 更多内容中的下方ul中样式调整 半自助游 */
+.follower .bd ul li.more-grid ul{
+  margin-left: 68px;
+}

@@ -1,0 +1,36 @@
+.fresh-tail {
+  background-color: #F7F7F7;
+  padding-top: 40px;
+  height: 698px;
+}
+
+/* 内容 */
+.fresh-tail .center-wrap >ul >li {
+  float: left;
+  width: 264px;
+  height: 270px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  background: white;
+}
+
+/* 选择索引为4的倍数的子元素 */
+.fresh-tail .center-wrap >ul >li:nth-child(4n){
+  margin-right: 0;
+}
+/* 图片部分 */
+.fresh-tail .center-wrap > ul>li .picbox{
+  height: 184px;
+}
+
+/* 文字部分 */
+.fresh-tail .center-wrap > ul>li .wordbox {
+  color: #1c1F21;
+  font-size: 14px;
+  padding: 20px 14px 22px 14px;
+}
+
+/* 添加鼠标悬停阴影效果 */
+.fresh-tail .center-wrap > ul >li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20);
+}

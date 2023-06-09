@@ -1,0 +1,18 @@
+/* 公共的一个特效：鼠标触碰图片，能够有放大效果 */
+.content-img-scale img {
+  transition: transform .4s ease 0s;
+}
+
+.content-img-scale img:hover {
+  transform: scale(1.1);
+}
+
+/* 图片放大超过的部分隐藏 */
+/* 两个区别在于，一个隐藏li的，一个隐藏picbox的 */
+.content-img-scale li {
+  overflow: hidden;
+}
+.content-img-scale li .picbox {
+  height: 180px;
+  overflow: hidden;
+}

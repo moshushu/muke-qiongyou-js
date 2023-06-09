@@ -1,0 +1,61 @@
+/* 特色当地体验 */
+.featur-local {
+  height: 416px;
+  padding-top: 40px;
+  background-color: white;
+}
+
+.featur-local .f-title > h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #1C1F21;
+  /* 加粗 */
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.featur-local .bd >ul >li {
+  float: left;
+  width: 264px;
+  height: 290px;
+  margin-right: 32px;
+  /* 阴影 */
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.1);
+}
+
+.featur-local .bd > ul >li:last-child {
+  margin-right: 0;
+}
+
+.featur-local .bd .picbox {
+  width: 264px;
+  height: 184px;
+}
+
+.featur-local .bd .wordbox {
+  width: 264px;
+  height: 106px;
+  padding: 16px 8px 16px 14px;
+  box-sizing: border-box;
+  color: #000000;
+} 
+
+.featur-local .bd .wordbox .p-one {
+  font-size: 16px;
+  height: 48px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.featur-local .bd .wordbox .score {
+  font-size: 12px;
+  color: #FA6400;
+}
+
+.featur-local .bd .wordbox .comment {
+  font-size: 12px;
+}
+
+.featur-local .bd ul li:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
